@@ -43,6 +43,7 @@
         height: 100%;
         width: 200px;
       }
+
       .container1 {
         width: 100%;
         height: 350px;
@@ -88,6 +89,11 @@
       }
       #aboutMe {
         margin-right: 470px;
+        margin-top: 60px;
+        font-size: 22px;
+      }
+      #myphoto {
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -126,17 +132,23 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Drop
+                See more
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">1</a>
-                <a class="dropdown-item" href="#">2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="https://github.com/MihaelaO6"
+                  >My projects</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="http://ciit.finki.ukim.mk/proceedings/ciit-2021-proceedings.pdf"
+                  >My research paper</a
+                >
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contact</a>
+              <a class="nav-link" href="mailto:obadikm1408@gmail.com"
+                >contact</a
+              >
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -154,7 +166,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">CV </a>
+                <a class="nav-link" href="cv.pdf" download> CV </a>
               </li>
             </ul>
             <input
@@ -187,16 +199,22 @@
         <div class="container1">
           <div class="row">
             <div class="col-lg-3 ml-auto">
-              <img src="mihaela.jpg" alt="img" class="img-fluid rounded-pill" />
+              <img
+                src="mihaela.jpg"
+                alt="img"
+                id="myphoto"
+                class="img-fluid rounded-pill"
+              />
             </div>
             <div class="col-lg-8 ml-auto col-l">
               <p id="aboutMe">
-                Student at Faculty of Computer Science & Engineering <br />
-                Ss. Cyril and Methodius University, Skopje I'm a 22 year old
-                student interested in computer science. Looking for an adventure
-                to upgrade my skills and knowledge. I enjoy hearing new things
-                and meeting new people. I have experience in JavaScript, HTML
-                and CSS, Bootstrap5, Flutter, Java and Raect.
+                Student at Faculty of Computer Science & Engineering Ss. Cyril
+                and Methodius University, Skopje <br />
+                I'm a 22 year old student interested in computer science.
+                Looking for an adventure to upgrade my skills and knowledge. I
+                enjoy hearing new things and meeting new people. I have
+                experience in JavaScript, HTML and CSS, Bootstrap5, Flutter,
+                Java and Raect.
               </p>
             </div>
           </div>
