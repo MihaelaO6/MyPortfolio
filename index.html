@@ -1,307 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+    <style>
+      body {
+        background: rgb(172, 47, 188);
+        background: linear-gradient(
+          90deg,
+          rgba(195, 64, 212, 0.723) 1%,
+          rgba(130, 69, 188, 0.8212535014005602) 27%,
+          rgba(104, 82, 188, 0.7988445378151261) 43%,
+          rgba(62, 84, 164, 0.634) 65%,
+          rgba(29, 95, 72, 0.292)
+        );
+        width: auto;
+      }
+      img {
+        height: 100%;
+        width: 200px;
+      }
+      .container1 {
+        width: 100%;
+        height: 350px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        background: rgb(231, 152, 186);
+        background: radial-gradient(
+          circle,
+          rgb(236, 146, 185) 0%,
+          rgb(82, 144, 108) 100%
+        );
+      }
 
-  <title>Portfolio</title>
-  <style>
-    body{
-    }
-    img{
-      height: 200px;
-      width: 200px;
-    }
-    hr{
-      border-radius: 100px;
-      color: black;
-      border: black;
-    }
-    .container1{
-      width: auto;
-      margin-left: 0%;
-      margin-top: 15px;
-      margin-bottom: 40px;
-      background-image: url("bg2.png");
-    }
-    .container2{
-      width: 100%;
-      height: 290px;
-    }
-    h1{
-      margin-left: 97px;
-    }
-   .overlay{
-    position: absolute;
-   }
-   .mytext{
-     text-align: center;
-     margin-top: 60px;
-     font-size: 40px;
-     font-family: "Source Code Pro Light";
-   }
-   .logo{
-     background-image: url("mihaela1.png");
-   }
-   .navv{
-     width: 100%;
-   }
-  </style>
-</head>
-<body>
-<main id="main">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navv">
-    <a class="navbar-brand logo" href="#">MyLogo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">About me</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Drop
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">1</a>
-            <a class="dropdown-item" href="#">2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">3</a>
+      .container2 {
+        width: 100%;
+        height: 185px;
+        margin-left: 40px;
+      }
+      h1 {
+        margin-left: 97px;
+      }
+      .overlay {
+        position: absolute;
+      }
+      .mytext {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 40px;
+        font-family: "Source Code Pro";
+      }
+      .logo {
+        background-image: url("mihaela1.png");
+      }
+      .navv {
+        width: 100%;
+        background: rgb(42, 94, 78);
+      }
+      #myName {
+        font-family: "Source Code Pro";
+        font-size: 55px;
+      }
+      #aboutMe {
+        margin-right: 470px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <nav class="navbar navbar-expand-lg navbar-dark navv">
+        <a class="navbar-brand logo" href="#">MyLogo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Drop
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">1</a>
+                <a class="dropdown-item" href="#">2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/mihaela-obadikj-b841181bb/"
+                  >Linkedin <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/MihaelaO6"
+                  >Github</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">CV </a>
+              </li>
+            </ul>
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="container2">
+          <div class="row">
+            <!--  <img src="back1.jpg" />-->
+            <span class="overlay"
+              ><div class="mytext">
+                WELCOME TO MY WEBSITE <br /><span id="myName"
+                  >Mihaela Obadikj</span
+                >
+              </div>
+            </span>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contact</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.linkedin.com/in/mihaela-obadikj-b841181bb/">Linkedin <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/MihaelaO6">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">CV </a>
-          </li>
-        </ul>
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <div class="container2">
-    <div class="row">
-      <img src="back1.jpg">
-      <span class="overlay"><div class="mytext">WELCOME TO MY WEBSITE</div>
-</span>
-    </div>
-  </div>
-  <section class="section">
+        </div>
+      </section>
+      <section class="section">
+        <div class="container1">
+          <div class="row">
+            <div class="col-lg-3 ml-auto">
+              <img src="mihaela.jpg" alt="img" class="img-fluid rounded-pill" />
+            </div>
+            <div class="col-lg-8 ml-auto col-l">
+              <p id="aboutMe">
+                Student at Faculty of Computer Science & Engineering <br />
+                Ss. Cyril and Methodius University, Skopje I'm a 22 year old
+                student interested in computer science. Looking for an adventure
+                to upgrade my skills and knowledge. I enjoy hearing new things
+                and meeting new people. I have experience in JavaScript, HTML
+                and CSS, Bootstrap5, Flutter, Java. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Et harum quidem rerum facilis est
+                et expedita distinctio. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Et harum quidem rerum facilis est et
+                expedita distinctio. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Et harum quidem rerum facilis est et
+                expedita distinctio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <h1>My projects:</h1>
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 1: <b>E-Rental App</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>Flutter(Dart)</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/e_rental_app"
+                        class="btn btn-primary btn1"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img src="bg.jpg" alt="Image" class="img-fluid rounded" />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch mybg">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 2:<b> TO DO app</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5, JavaScript</p>
 
-    <div class="container1">
-      <div class="row">
-        <div class="col-lg-3 ml-auto">
-          <img src="mihaela.jpg" alt="img" class="img-fluid rounded-pill">
+                    <p>
+                      <a
+                        href="https://mihaelao6.github.io/To-do-web-app/"
+                        class="btn btn-primary btn1"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://mihaelao6.github.io/ShoppingCart/"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid roundedv"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-8 ml-auto col-l">
-          <h2><b>Mihaela Obadikj</b></h2>
-         <p>Student at Faculty of Computer Science & Engineering <br> Ss. Cyril and Methodius University, Skopje </p>
-       <h5>
-      <b>   I'm a 22 year old student interested in computer science. Looking for an adventure to
-         upgrade my skills and knowledge. I enjoy hearing new things and meeting new people. I have experience in JavaScript, HTML and CSS, Bootstrap5, Flutter, Java.
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch mybg">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 3:<b> Shopping Cart</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5, JavaScript</p>
 
-      </b></h5>
-        </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <h1>My projects: </h1>
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 1: <b>E-Rental App</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>Flutter(Dart)</p>
-                <p><a href="https://github.com/MihaelaO6/e_rental_app" class="btn btn-primary btn1">Visit project</a></p></div>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/ShoppingCart"
+                        class="btn btn-primary btn1"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://mihaelao6.github.io/ShoppingCart/"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid roundedv"
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <img src="bg.jpg" alt="Image" class="img-fluid rounded"> <hr>
+        </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch mybg">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 4: <b>Inflation Calculator</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5, JavaScript</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/InflationCalculator"
+                        class="btn btn-primary"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/InflationCalculator"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 5: <b>System for learning Java</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5, JavaScript</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/JavaLearnPrototype"
+                        class="btn btn-primary"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/JavaLearnPrototype"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 6: <b>Sign up form</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5, JavaScript</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/SignUpForm"
+                        class="btn btn-primary"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/SignUpForm"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch mybg">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 2:<b> Shopping Cart</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>HTML, CSS, Bootstrap5, JavaScript</p>
-
-                <p><a href="https://github.com/MihaelaO6/ShoppingCart" class="btn btn-primary btn1">Visit project</a></p>   </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 7: <b>Register and payment form</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/Register-payout-forms"
+                        class="btn btn-primary my-btn"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/Register-payout-forms"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="https://github.com/MihaelaO6/ShoppingCart"><img src="bg.jpg" alt="Image" class="img-fluid roundedv"></a>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch mybg">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 3: <b>Inflation Calculator</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>HTML, CSS, Bootstrap5, JavaScript</p>
-                <p><a href="https://github.com/MihaelaO6/InflationCalculator" class="btn btn-primary">Visit project</a></p>   </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 8: <b>Portfolio example</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>HTML, CSS, Bootstrap5</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/Portfolio"
+                        class="btn btn-primary my-btn"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/Portfolio"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="https://github.com/MihaelaO6/InflationCalculator"><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 4: <b>System for learning Java</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>HTML, CSS, Bootstrap5, JavaScript</p>
-                <p><a href="https://github.com/MihaelaO6/JavaLearnPrototype" class="btn btn-primary">Visit project</a></p>   </div>
+        <div class="site-section pb-0">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-md-8 ml-auto">
+                <div class="sticky-content">
+                  <h2>Project 9: <b>Student example</b></h2>
+                  <div class="mb-5">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit,sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Et harum quidem rerum facilis est et
+                      expedita distinctio
+                    </p>
+                    <p>Java, using JSON</p>
+                    <p>
+                      <a
+                        href="https://github.com/MihaelaO6/JavaTask"
+                        class="btn btn-primary my-btn"
+                        >Visit project</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a href="https://github.com/MihaelaO6/JavaTask"
+                  ><img src="bg.jpg" alt="Image" class="img-fluid rounded"
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="https://github.com/MihaelaO6/JavaLearnPrototype"><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
+        <nav class="nav justify-content-center" aria-label="Navigation">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><<</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">>></a></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 5: <b>Sign up form</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>HTML, CSS, Bootstrap5, JavaScript</p>
-                <p><a href="https://github.com/MihaelaO6/SignUpForm" class="btn btn-primary">Visit project</a></p>   </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <a  href="https://github.com/MihaelaO6/SignUpForm" ><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-1">Copyright &copy; Mihaela Obadikj 2022</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 6: <b>Register and payment form</b></h2>
-                <div class="mb-5">
-                  <p>Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                  <p>HTML, CSS, Bootstrap5</p>
-                  <p><a href="https://github.com/MihaelaO6/Register-payout-forms" class="btn btn-primary my-btn">Visit project</a></p>   </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <a  href="https://github.com/MihaelaO6/Register-payout-forms"><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 7: <b>Portfolio example</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>HTML, CSS, Bootstrap5</p>
-                <p><a href="https://github.com/MihaelaO6/Portfolio" class="btn btn-primary my-btn">Visit project</a></p>   </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <a  href="https://github.com/MihaelaO6/Portfolio"><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-8 ml-auto">
-            <div class="sticky-content">
-              <h2>Project 8: <b>Student example</b></h2>
-              <div class="mb-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Et harum quidem rerum facilis est et expedita distinctio</p>
-                <p>Java, using JSON</p>
-                <p><a href="https://github.com/MihaelaO6/JavaTask" class="btn btn-primary my-btn">Visit project</a></p>   </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <a  href="https://github.com/MihaelaO6/JavaTask"><img src="bg.jpg" alt="Image" class="img-fluid rounded"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="nav justify-content-center" aria-label="Navigation">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#"><<</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">5</a></li>
-        <li class="page-item"><a class="page-link" href="#">>></a></li>
-      </ul>
-    </nav>
-  </section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="mb-1">Copyright &copy; Mihaela Obadikj 2022</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="./js/bootstrap.bundle.js"></script>
-</body>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
 </html>
